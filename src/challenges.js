@@ -4,15 +4,13 @@ function compareTrue(a, b) {
   if (a && b) {
     return true;
   }
-  else {
-    return false;
-  };
+  return false;
 }
 
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
-  return (base * height)/2;
+  return (base * height) / 2;
 }
 
 // Desafio 3
@@ -27,8 +25,8 @@ function splitSentence(str) {
 // Desafio 4
 function concatName(str) {
   // seu código aqui
-  let arrStrSolved = str[str.length -1] + ', ' + str[0];
-  return  arrStrSolved;
+  let arrStrSolved = `${str[str.length - 1]}, ${str[0]}`;
+  return arrStrSolved;
 }
 
 // Desafio 5
@@ -42,18 +40,18 @@ function footballPoints(wins, ties) {
 function highestCount(arr) {
   // seu código aqui
   let ord = arr;
-  let count = 0
-  for (let n2 = 1; n2 < ord.length; n2 +=1) {
+  let count = 0;
+  for (let n2 = 1; n2 < ord.length; n2 += 1) {
     for (let n1 = 0; n1 < ord.length; n1 += 1) {
-      if(ord[n2] > ord[n1]) {
+      if (ord[n2] > ord[n1]) {
         let aux = ord[n1];
         ord[n1] = ord[n2];
         ord[n2] = aux;
       }
     }
   }
-  for (let index = 0; index < arr.length; index +=1){
-    if (ord[0] === arr[index]){
+  for (let index = 0; index < arr.length; index += 1) {
+    if (ord[0] === arr[index]) {
       count += 1;
     }
   }
@@ -65,38 +63,34 @@ function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   let cat1Dist = cat1 - mouse;
   let cat2Dist = cat2 - mouse;
-  if(cat1Dist < 0) {
+  if (cat1Dist < 0) {
     cat1Dist *= -1;
   }
-  if(cat2Dist < 0) {
-    cat2Dist *= -1
+  if (cat2Dist < 0) {
+    cat2Dist *= -1;
   }
-  if(cat1Dist === cat2Dist) {
+  if (cat1Dist === cat2Dist) {
     return 'os gatos trombam e o rato foge';
   }
-  else if(cat1Dist < cat2Dist) {
+  if (cat1Dist < cat2Dist) {
     return 'cat1';
   }
-  else {
-    return 'cat2';
-  }
+
+  return 'cat2';
 }
 
 // Desafio 8
 function fizzBuzz(arr) {
   // seu código aqui
   let fizzBuzz = [];
-  for (n of arr){
-    if (n % 3 === 0 && n % 5 === 0){
+  for (let n of arr) {
+    if (n % 3 === 0 && n % 5 === 0) {
       fizzBuzz.push('fizzBuzz');
-    }
-    else if (n % 3 === 0){
+    } else if (n % 3 === 0) {
       fizzBuzz.push('fizz');
-    }
-    else if (n % 5 === 0){
+    } else if (n % 5 === 0) {
       fizzBuzz.push('buzz');
-    }
-    else {
+    } else {
       fizzBuzz.push('bug!');
     }
   }
@@ -107,23 +101,18 @@ function fizzBuzz(arr) {
 function encode(str) {
   // seu código aqui
   let enc = '';
-  for(let index = 0; index < str.length; index +=1){
-    if(str[index] === 'a'){
+  for (let index = 0; index < str.length; index += 1) {
+    if (str[index] === 'a') {
       enc += '1';
-    }
-    else if(str[index] === 'e'){
+    } else if (str[index] === 'e') {
       enc += '2';
-    }
-    else if(str[index] === 'i'){
+    } else if (str[index] === 'i') {
       enc += '3';
-    }
-    else if(str[index] === 'o'){
+    } else if (str[index] === 'o') {
       enc += '4';
-    }
-    else if(str[index] === 'u'){
+    } else if (str[index] === 'u') {
       enc += '5';
-    }
-    else{
+    } else {
       enc += str[index];
     }
   }
@@ -132,23 +121,18 @@ function encode(str) {
 function decode(str) {
   // seu código aqui
   let enc = '';
-  for(let index = 0; index < str.length; index +=1){
-    if(str[index] === '1'){
+  for (let index = 0; index < str.length; index += 1) {
+    if (str[index] === '1') {
       enc += 'a';
-    }
-    else if(str[index] === '2'){
+    } else if (str[index] === '2') {
       enc += 'e';
-    }
-    else if(str[index] === '3'){
+    } else if (str[index] === '3') {
       enc += 'i';
-    }
-    else if(str[index] === '4'){
+    } else if (str[index] === '4') {
       enc += 'o';
-    }
-    else if(str[index] === '5'){
+    } else if (str[index] === '5') {
       enc += 'u';
-    }
-    else{
+    } else {
       enc += str[index];
     }
   }

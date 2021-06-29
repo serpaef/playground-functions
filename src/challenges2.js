@@ -5,18 +5,18 @@
 
 function techList(arr, name) {
   // seu código aqui
-  orderedArr = arr.sort();
+  let orderedArr = arr.sort();
   let objList = [];
-  if(orderedArr.length !== 0){
-    for (t of orderedArr){
+  if (orderedArr.length !== 0) {
+    for (let t of orderedArr) {
       objList.push({
         tech: t,
-        name: name,
-      })
+        name,
+      });
     }
     return objList;
   }
-  return 'Vazio!'
+  return 'Vazio!';
 }
 
 // Desafio 11

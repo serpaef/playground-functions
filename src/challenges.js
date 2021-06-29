@@ -16,8 +16,12 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(str) {
   // seu código aqui
+  // usei nesse código as informações do blog da trybe:
+  // https://blog.betrybe.com/javascript/javascript-split/
+  let arrStr = str.split(' ');
+  return arrStr;
 }
 
 // Desafio 4

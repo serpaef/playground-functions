@@ -1,6 +1,5 @@
 // Desafio 1
 function compareTrue(a, b) {
-  // seu código aqui
   if (a && b) {
     return true;
   }
@@ -9,13 +8,11 @@ function compareTrue(a, b) {
 
 // Desafio 2
 function calcArea(base, height) {
-  // seu código aqui
   return (base * height) / 2;
 }
 
 // Desafio 3
 function splitSentence(str) {
-  // seu código aqui
   // usei nesse código as informações do blog da trybe:
   // https://blog.betrybe.com/javascript/javascript-split/
   let arrStr = str.split(' ');
@@ -24,14 +21,12 @@ function splitSentence(str) {
 
 // Desafio 4
 function concatName(str) {
-  // seu código aqui
   let arrStrSolved = `${str[str.length - 1]}, ${str[0]}`;
   return arrStrSolved;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  // seu código aqui
   let points = (wins * 3) + ties;
   return points;
 }
@@ -67,7 +62,6 @@ function highestCount(arr) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  // seu código aqui
   let cat1Dist = cat1 - mouse;
   let cat2Dist = cat2 - mouse;
   if (cat1Dist < 0) {
@@ -88,7 +82,6 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(arr) {
-  // seu código aqui
   let fizzBuzz = [];
   for (let n of arr) {
     if (n % 3 === 0 && n % 5 === 0) {
@@ -106,7 +99,6 @@ function fizzBuzz(arr) {
 
 // Desafio 9
 function encode(str) {
-  // seu código aqui
   let enc = '';
   for (let index = 0; index < str.length; index += 1) {
     if (str[index] === 'a') {
@@ -126,7 +118,6 @@ function encode(str) {
   return enc;
 }
 function decode(str) {
-  // seu código aqui
   let enc = '';
   for (let index = 0; index < str.length; index += 1) {
     if (str[index] === '1') {
